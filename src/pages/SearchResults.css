@@ -1,0 +1,259 @@
+.results-container {
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 1.5rem;
+}
+
+.results-heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: inherit;
+}
+
+body.dark .results-heading {
+  color: #e5e7eb;
+}
+
+body.light .results-heading {
+  color: #111827;
+}
+
+.results-query {
+  color: inherit;
+}
+
+body.dark .results-query {
+  color: #22d3ee;
+}
+
+body.light .results-query {
+  color: #0ea5e9;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  background-color: inherit; 
+  color: inherit;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+body.light .product-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  color: #111827;
+}
+
+body.dark .product-card {
+  background-color: #020617;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  color: #f9fafb;
+  box-shadow: 0 0 18px rgba(15, 23, 42, 0.8);
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+body.light .product-image {
+  background-color: #f5f5f5;
+}
+
+body.dark .product-image {
+  background-color: #0f172a;
+}
+
+.product-info {
+  padding: 10px 12px 12px;
+  color: inherit; 
+}
+
+.product-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.product-company {
+  font-size: 0.8rem;
+  color: inherit;
+  opacity: 0.7;
+}
+
+body.light .product-company {
+  color: #6b7280;
+}
+
+body.dark .product-company {
+  color: #9ca3af;
+}
+
+.price-block {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.current-price {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+.original-price {
+  font-size: 0.8rem;
+  text-decoration: line-through;
+}
+
+body.light .original-price {
+  color: #6b7280;
+}
+
+body.dark .original-price {
+  color: #9ca3af;
+}
+
+.discount-percent {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #22c55e;
+}
+
+.offer-pill {
+  margin-top: 6px;
+  display: inline-block;
+  padding: 3px 8px;
+  font-size: 0.75rem;
+  border-radius: 999px;
+}
+
+body.light .offer-pill {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}
+
+body.dark .offer-pill {
+  background-color: rgba(37, 99, 235, 0.25);
+  color: #bfdbfe;
+  border: 1px solid rgba(37, 99, 235, 0.5);
+}
+
+.delivery-text {
+  margin-top: 4px;
+  font-size: 0.8rem;
+}
+
+body.light .delivery-text {
+  color: #4b5563;
+}
+
+body.dark .delivery-text {
+  color: #9ca3af;
+}
+
+.spec-chip-row {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.spec-chip {
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+
+body.light .spec-chip {
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  color: #111827;
+}
+
+body.dark .spec-chip {
+  background-color: #0f172a;
+  border: 1px solid #3f4a5a;
+  color: #e5e7eb;
+}
+
+.no-results-text {
+  margin-top: 1rem;
+}
+
+body.light .no-results-text {
+  color: #4b5563;
+}
+
+body.dark .no-results-text {
+  color: #9ca3af;
+}
+
+.skeleton-card {
+  padding: 12px;
+  border-radius: 16px;
+  animation: pulse 1.3s infinite;
+}
+
+body.light .skeleton-card {
+  background-color: #e2e8f0;
+}
+
+body.dark .skeleton-card {
+  background-color: #1f2937;
+}
+
+.skeleton-img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+body.light .skeleton-img {
+  background-color: #cbd5e1;
+}
+
+body.dark .skeleton-img {
+  background-color: #374151;
+}
+
+.skeleton-line {
+  height: 10px;
+  width: 100%;
+  border-radius: 50px;
+}
+
+body.light .skeleton-line {
+  background-color: #cbd5e1;
+}
+
+body.dark .skeleton-line {
+  background-color: #374151;
+}
+
+.skeleton-line.short {
+  width: 60%;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}

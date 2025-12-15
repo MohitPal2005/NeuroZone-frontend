@@ -1,0 +1,130 @@
+.product-card {
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+@media (min-width: 640px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+
+.product-media {
+  width: 100%;
+  height: 180px;
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+.product-media img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.product-body {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-grow: 1;
+}
+
+.product-title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  height: 2.4rem;
+  overflow: hidden;
+  color: var(--text);
+}
+
+.product-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.price {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.rating {
+  background-color: #388e3c;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+
+.btn.add {
+  margin-top: auto;
+  padding: 8px 0;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background-color: var(--primary);
+  color: var(--primary-contrast);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn.add:hover {
+  background-color: #fb641b;
+  color: white;
+  border-color: #fb641b;
+}
+
+body.dark .product-card {
+  background: #000;
+  border: 1px solid #333;
+  box-shadow: 0 4px 12px rgba(255,255,255,0.05);
+}
+
+body.dark .product-media {
+  background: #111;
+}
+
+body.dark .product-title,
+body.dark .price {
+  color: #fff;
+}
+
+body.dark .product-meta {
+  color: #aaa; 
+}
+
+body.dark .rating {
+  background-color: #22d3ee; 
+}

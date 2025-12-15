@@ -1,0 +1,90 @@
+:root {
+  --bg-light: #ffffff;
+  --bg-dark: #121212;
+  --text-light: #000;
+  --text-dark: #f0f0f0;
+  --primary-color: rgb(8, 9, 9);
+}
+
+body.light,
+.home.light {
+  background: var(--bg-light);
+  color: var(--text-light);
+}
+
+body.dark,
+.home.dark {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: var(--primary-color);
+  color: white;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero-slider .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.features-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.feature-card {
+  flex: 0 0 auto;
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.product-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.footer {
+  background: #222;
+  color: #ddd;
+  padding: 2rem;
+  text-align: center;
+}

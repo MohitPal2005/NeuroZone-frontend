@@ -1,0 +1,139 @@
+.cloth-wrapper {
+  padding: 40px 6vw;
+  color: #f1f5f9;
+  width: 100%;
+  min-height: 90vh;
+}
+
+.back-btn {
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  margin-bottom: 20px;
+  transition: 0.25s;
+}
+.back-btn:hover {
+  background: #334155;
+}
+
+.cloth-card {
+  display: flex;
+  gap: 40px;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+  align-items: center;
+}
+
+.cloth-image-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.cloth-image {
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.45);
+  transition: 0.3s;
+}
+.cloth-image:hover {
+  transform: scale(1.05);
+}
+
+.cloth-details {
+  flex: 1;
+}
+
+.cloth-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.cloth-price-box {
+  margin-bottom: 15px;
+}
+.cloth-price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #38bdf8;
+}
+.cloth-discount {
+  font-size: 1rem;
+  color: #22c55e;
+}
+
+.cloth-desc {
+  margin: 16px 0;
+  color: #94a3b8;
+  line-height: 1.4rem;
+}
+
+.cloth-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 15px;
+}
+
+.tryon-btn {
+  padding: 12px 22px;
+  background: #0ea5e9;
+  color: white;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.tryon-btn:hover {
+  background: #0284c7;
+}
+
+.secondary-btn {
+  padding: 12px 22px;
+  background: #1e293b;
+  color: #e2e8f0;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.secondary-btn:hover {
+  background: #334155;
+}
+
+.features-box {
+  margin-top: 25px;
+}
+
+.features-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.features-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features-box li {
+  color: #cbd5e1;
+  margin: 5px 0;
+}
+
+@media (max-width: 900px) {
+  .cloth-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cloth-buttons {
+    justify-content: center;
+  }
+}

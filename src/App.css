@@ -1,3 +1,57 @@
+:root {
+  --category-bg: #f7f7f7;
+  --primary-color: #00bba3;
+  --text-color: #000000;
+  --icon-color: #00bba3;
+  --hover-bg: #e0f7f4;
+
+  --bg-light: #ffffff;
+  --text-light: #000000;
+  --bg-dark: #121212;
+  --text-dark: #f0f0f0;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark-mode {
+  --category-bg: #1e1e1e;
+  --primary-color: #00bba3;
+  --text-color: #ffffff;
+  --icon-color: #00bba3; 
+  --hover-bg: #2a2a2a;
+
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+body.light .search-input {
+  color: #121212;
+  background-color: rgb(248, 246, 246);
+}
+
+body.light .mic-button {
+  background-color: #00bba3;
+  color: white;
+}
+
+body.light .navbar {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.light .nav-icon {
+  color: #090b0a;
+}
+
+body.light .nav-icon:hover {
+  color: #060707;
+}
+
 .App {
   text-align: center;
 }
@@ -5,27 +59,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+  animation: App-logo-spin infinite 20s linear;
 }
 
 @keyframes App-logo-spin {

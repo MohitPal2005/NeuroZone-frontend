@@ -1,0 +1,14 @@
+/* .banner {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+.banner img {
+  flex: 0 0 100%;
+  max-height: 400px;
+  object-fit: cover;
+  scroll-snap-align: start;
+} */
