@@ -3,7 +3,8 @@ import { useLocation, Link } from "react-router-dom";
 import axios from "axios";
 import "./SearchResults.css";
 
-const BACKEND_ORIGIN = "https://mohitpal20.pythonanywhere.com";
+// const BACKEND_ORIGIN = "https://mohitpal20.pythonanywhere.com";
+const BACKEND_ORIGIN = process.env.REACT_APP_BACKEND_URL;
 const PLACEHOLDER = "/placeholder.jpg";
 
 function getField(obj, keys) {

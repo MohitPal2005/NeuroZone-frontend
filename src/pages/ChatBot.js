@@ -43,7 +43,8 @@ const ChatBot = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("https://mohitpal20.pythonanywhere.com/chat", {
+      // const response = await fetch("https://mohitpal20.pythonanywhere.com/chat",
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: input }),

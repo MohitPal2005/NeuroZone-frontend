@@ -6,7 +6,8 @@ import { toast } from "react-toastify";
 import { ShoppingCart, Zap, Star } from "lucide-react";
 import styled, { createGlobalStyle } from "styled-components";
 
-const BACKEND_ORIGIN = "https://mohitpal20.pythonanywhere.com";
+// const BACKEND_ORIGIN = "https://mohitpal20.pythonanywhere.com";
+const BACKEND_ORIGIN = process.env.REACT_APP_BACKEND_URL
 const PLACEHOLDER = "/placeholder.jpg";
 
 export const GlobalStyle = createGlobalStyle`
